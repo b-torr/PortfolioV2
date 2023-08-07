@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+        <body>
+            <div class="contentBody">
+                <div class="navbar-wrapper">
+                    <nav>
+                        <h2>Billy Torr</h2>
+                            <ul class="navigation-items">
+                                <li class="navigation-item"><a href="#about-me">About Me</a></li>
+                                <li class="navigation-item"><a href="#projects">Projects</a></li>
+                                <li class="navigation-item"><a href="#skills">Skills</a></li>
+                                <li class="navigation-item"><a href="#contact">Contact</a></li>
+                            </ul>
+                    </nav>
+                </div>
+                        <main>
+                            <section id="about-me">
+                                <div class="aboutContainer">
+                                        <img src="pics/me.jpg" alt="image of me">
+                                            <div class="aboutTextBox">
+                                                <p>
+                                                I'm Billy, a 21-year-old aspiring software and web developer based in Derby. Ever since I first dived into the world of coding through platforms like Codecademy, I've been captivated by the endless possibilities of creating digital solutions and bringing ideas to life.
+                                                <br>
+                                                <br>
+                                                My journey into the tech world has been fueled by a passion for innovation and problem-solving. I'm constantly inspired by the ever-changing nature of technology, which is what drives me to pursue a career in software and web development.
+                                                <br>
+                                                <br>
+                                                Beyond coding, first and foremost im a Derby County fan. But in my spare time, you'll often find me engrossed in a new project using Arduino, where I love to tinker and experiment with electronics.
+                                        
+                                                Alongside this, I have a keen interest in building PCs and 3D printing. 
+                                                <br>
+                                                <br>
+                                                I'm excited to embark on this journey and take my skills to the next level. Whether it's collaborating on cutting-edge projects or contributing to meaningful developments, I'm eager to make a positive impact with my work.
+                                            </p>
+                                        </div>
+                                </div>    
+                            </section>
+                                <section id="skills">
+                                    <h2>Skills</h2>
+                                    <div class="skills-container">
+                                        <img src="pics/html logo.png" alt="HTML">
+                                        <img src="pics/css logo.png" alt="CSS">
+                                        <img src="pics/js logo.png" alt="JavaScript">
+                                        <img src="pics/chrome logo.png" alt="Chrome Dev Tools">
+                                        <img src="pics/git logo.png" alt="GitBash">
+                                        <img src="pics/github logo.png" alt="Github">    
+                                    </div>
+                                </section>
+                                <section id="projects">
+                                    <h2>Projects</h2>
+                                    <div class="projectsContainer">
+                                        <a href="audio.html">
+                                            <img src="pics/audio.jpg">
+                                        </a>
+                                        <a href="splojj.html">
+                                            <img src="pics/SPLOJJ logo.jpg">
+                                        </a>
+                                    </div>
+                                </section>
+                                <section id="contact">
+                                    <div class="contactContainer">
+                                    <h2>Contact</h2>
+                                        <p>Feel free to reach me at
+                                            <a href="mailto:billytorr14@gmail.com"><i>billytorr14@gmail.com</i></a>
+                                                <br>
+                                        </p>
+                                        <p class="date">2023</p>
+                                    </div>
+                                </section>
+                        </main>
+                        <script>
+                            // Get a reference to the navbar wrapper element
+                            const navbarWrapper = document.querySelector('.navbar-wrapper');
+                    
+                            // Function to toggle the sticky class on the navbar wrapper
+                            function toggleStickyNavbar() {
+                                // Get the window's scroll position
+                                const scrollPosition = window.scrollY;
+                    
+                                // Add or remove the sticky class based on the scroll position
+                                if (scrollPosition > 0) {
+                                    navbarWrapper.classList.add('sticky');
+                                } else {
+                                    navbarWrapper.classList.remove('sticky');
+                                }
+                            }
+                    
+                            // Attach a scroll event listener to the window
+                            window.addEventListener('scroll', toggleStickyNavbar);
+                        </script>
+                </div>
+        </body>
+</html>
